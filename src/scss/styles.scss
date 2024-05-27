@@ -2,5 +2,10 @@
 @use 'base/initial-reset.scss';
 @use 'config/variables.scss';
 @use 'blocks/body.scss';
-@use 'blocks/cards.scss'
+@use 'blocks/cards.scss';
+@use 'blocks/header.scss';
+@use 'blocks/main.scss';
+@use 'blocks/button.scss';
+@use 'blocks/formation.scss';
+@use 'blocks/navbar.scss';
 

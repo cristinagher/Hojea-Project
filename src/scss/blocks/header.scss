@@ -1,0 +1,50 @@
+.header {
+    &::after {
+        content: "";
+        position: absolute;
+        top:0;
+        background-color: rgba(0, 0, 0, 0.46);
+        width: 375px;
+        height: 812px;
+        z-index: -1;
+       }
+    &::before {
+        content: "";
+        position: absolute;
+        top:0;
+        width: 375px;
+        height: 812px;
+        background-image: url(../../assets/images/mobile-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+    
+.logo-image {
+    margin-left: 15px;
+    position: sticky;
+
+}
+.menu-hamb {
+    margin-right: 15px;
+    position: sticky;
+   
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position:fixed;
+    background-color: transparent;
+    height: 128px;
+    width: 375px;
+    transition: background-color 0.2s ease-in-out;
+    z-index: 1;
+   
+}
+
+.header-container.sticky{
+    background: rgba(0, 0, 0, 0.819);
+}

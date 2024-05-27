@@ -1,0 +1,37 @@
+.subtitle {
+    font-family: 'Ubuntu';
+    font-size: 60px;
+    font-weight: 500;
+    color: black;
+    margin:0;
+    text-align: center;
+}
+.formation-description {
+    font-size:23px;
+    font-weight: 200;
+    font-family: 'Ubuntu';
+    color: black;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 55px;
+}
+.last-paragraph{
+    margin-bottom:0;
+}
+
+.formation {
+    background-color: #EEEEE1;
+    width: 375px;
+    position: absolute;
+    height: 5091px;
+    top: 812px
+}
+.subtitle-container {
+    display: flex;
+    flex-direction: column;
+    gap:64px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:178px;
+}
