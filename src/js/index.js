@@ -26,3 +26,16 @@ else {
 }
 
 buttonMenuElement.addEventListener('click', handleMenu);
+
+const closeMenuElement = document.getElementById('close-menu');
+
+function closeMenu() {
+if (menuElement.classList.contains('show')) {
+    menuElement.classList.remove('show')
+}
+else {
+    menuElement.classList.add('hidden');
+}
+}
+
+closeMenuElement.addEventListener('click', handleMenu);
