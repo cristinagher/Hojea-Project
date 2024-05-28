@@ -5,26 +5,32 @@
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Big+Shoulders+Display:wght@100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Cairo:wght@200..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital@0;1&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Big+Shoulders+Display:wght@100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Cairo:wght@200..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital@0;1&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CAMBIA EL TITLE!!! -->
     <title>Hojea</title>
   </head>
   <body>
     <header class="header">
       <div id="header-container" class="header-container">
-        <div class="logo-image"><img src="./assets/images/mobile.logo-blanco.svg" alt=""></div>
-        <a class="menu-hamb" id="button-menu" href="#"><img src="./assets/images/mobile-menu-hamburguesa.svg" alt=""></a>
+        <div class="logo-image">
+          <img src="./assets/images/mobile.logo-blanco.svg" alt="" />
+        </div>
+        <img class="menu-hamb" id="button-menu" src="./assets/images/mobile-menu-hamburguesa.svg" alt="" />
       </div>
-      
     </header>
     <main class="main">
       <nav class="navbar">
         <ul id="menu" class="menu">
-          <a class="cross" id="close-menu" href="#"><img src="./assets/images/cross-mobile.svg" alt=""></a>
+          <img class="cross" id="close-menu" src="./assets/images/cross-mobile.svg" alt="" />
           <li class="menu__item">
             <a href="#formation" class="menu__link">Formación</a>
+          </li>
+
           <li class="menu__item">
             <a href="#" class="menu__link">Tienda</a>
           </li>
@@ -38,7 +44,7 @@
             <a href="#" class="menu__link">Perfil</a>
           </li>
         </ul>
-    </nav>
+      </nav>
       <div class="title-button-container">
         <div class="title-container">
           <h1 class="title">HOJEA</h1>
@@ -48,45 +54,47 @@
           <button class="second-button">Únete</button>
           <button class="first-button">Haz una donación</button>
         </div>
-      </div> 
+      </div>
 
       <section class="formation">
         <span class="span" id="formation">.</span>
-      
+
         <div class="subtitle-container">
           <h1 class="subtitle">Formación</h1>
           <div class="description-container">
             <p class="formation-description">¡Bienvenido al espacio de formación de nuestra asociación!</p>
-  
-            <p class="formation-description">En nuestra misión por hacer de Madrid una ciudad más verde y respirable, ofrecemos una variedad de cursos de botánica asequibles y educativos.</p>
-               
-            <p class="formation-description">Nuestros cursos están diseñados para todos los amantes de la naturaleza y la jardinería que quieran tanto aprender como aportar su granito de arena para la plantación de nuevos árboles en la zona.</p>
-                  
-            <p class="formation-description">El 80% de los fondos recaudados se destinan directamente a nuestra iniciativa, ayudando a promover un entorno urbano más saludable y sostenible.</p>
-              
-            <p class="formation-description last-paragraph">¡Únete a nosotros en esta emocionante aventura de aprendizaje y conservación!</p>
+
+            <p class="formation-description">
+              En nuestra misión por hacer de Madrid una ciudad más verde y respirable, ofrecemos una variedad de cursos de botánica
+              asequibles y educativos.
+            </p>
+
+            <p class="formation-description">
+              Nuestros cursos están diseñados para todos los amantes de la naturaleza y la jardinería que quieran tanto aprender como
+              aportar su granito de arena para la plantación de nuevos árboles en la zona.
+            </p>
+
+            <p class="formation-description">
+              El 80% de los fondos recaudados se destinan directamente a nuestra iniciativa, ayudando a promover un entorno urbano más
+              saludable y sostenible.
+            </p>
+
+            <p class="formation-description last-paragraph">
+              ¡Únete a nosotros en esta emocionante aventura de aprendizaje y conservación!
+            </p>
           </div>
           <button class="third-button">Ver cursos</button>
         </div>
 
         <div class="slider-arrows-container">
-          <button id="prev" class="prev"><img src="./assets/images/arrow-prev.svg" alt=""></button>
-          <div id="slider" class="slider">
-            <img id="img" class="img" src="./assets/images/curso-1.jpg" alt="">
-            <img id="img" class="img" src="./assets/images/curso-2.jpg" alt="">
-            <img id="img" class="img" src="./assets/images/curso-3.jpg" alt="">
-            <img id="img" class="img" src="./assets/images/curso-4.jpg" alt="">
-            <img id="img" class="img" src="./assets/images/curso-5.jpg" alt="">
+          <button id="prev" class="prev"><img src="./assets/images/arrow-prev.svg" alt="" /></button>
+          <div class="slider">
+            <img id="slider-img" class="img" src="./assets/images/curso-1.jpg" alt="" />
           </div>
-          <button id="next" class="next"><img src="./assets/images/arrow-next.svg" alt=""></button>
+          <button id="next" class="next"><img src="./assets/images/arrow-next.svg" alt="" /></button>
         </div>
-        
-
+        <h2 id="slider-text">HOLA</h2>
       </section>
-      
-      
-      
-
     </main>
     <script type="module" src="./js/index.js"></script>
   </body>
