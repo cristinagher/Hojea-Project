@@ -1,4 +1,7 @@
-.second-button {
+@use '../mixins/hover.scss' as *;
+
+.second-button 
+{
     border: solid 3px #E7EA5A;
     color: white;
     font-weight: 200;
@@ -7,7 +10,11 @@
     width: 128px;
     height: 58px;
     border-radius: 24px;
+
+    @include hover {
+    border: solid 3px #b8bb29}
 }
+
 .first-button {
     color: rgb(0, 0, 0);
     font-weight: 400;
@@ -17,7 +24,11 @@
     width: 248px;
     height: 58px;
     border-radius: 24px;
+     @include hover {
+    background-color: #b8bb29;
+    }
 }
+
 .third-button {
     width: 172px;
     height: 58px;
@@ -27,4 +38,16 @@
     color:#E7EA5A ;
     font-size: 23px;
     font-weight: 400;
+    @include hover {
+        background-color: #b8bb29;
+        color: black;
+    }
+}
+.prev {
+    border: none;
+    
+}
+.next {
+    border:none;
+    
 }

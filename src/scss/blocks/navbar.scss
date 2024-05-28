@@ -1,3 +1,5 @@
+@use '../mixins/hover.scss' as *;
+
 .navbar {
     position:relative;
 }
@@ -25,4 +27,9 @@
 
 .show {
     visibility: visible;
+}
+.menu__item {
+    @include hover {
+        color: #E7EA5A;
+    }
 }
