@@ -45,6 +45,13 @@
         color: black;
     }
 }
+.ver-cursos{
+    margin-top: 24px;
+}
+.apuntate-button {
+    margin-top: 24px;
+    margin-bottom:80px;
+}
 .prev {
     border: none;
     
@@ -52,4 +59,21 @@
 .next {
     border:none;
     
+}
+.shop-button-container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 24px;
+}
+.small-button {
+    width: 136px;
+}
+
+.compra-button{
+    width: 258.9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }

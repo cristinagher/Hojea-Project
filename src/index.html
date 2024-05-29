@@ -32,7 +32,7 @@
           </li>
 
           <li class="menu__item">
-            <a href="#" class="menu__link">Tienda</a>
+            <a href="#tienda" class="menu__link">Tienda</a>
           </li>
           <li class="menu__item">
             <a href="#" class="menu__link">Blog</a>
@@ -56,10 +56,10 @@
         </div>
       </div>
       <section class="formation">
-        <span class="span" id="formation">.</span>
+        
 
         <div class="subtitle-container">
-          <h1 class="subtitle">Formación</h1>
+          <h1 class="subtitle" id="formation">Formación</h1>
           <div class="description-container">
             <p class="formation-description">¡Bienvenido al espacio de formación de nuestra asociación!</p>
 
@@ -82,7 +82,7 @@
               ¡Únete a nosotros en esta emocionante aventura de aprendizaje y conservación!
             </p>
           </div>
-          <button class="third-button">Ver cursos</button>
+          <button class="third-button ver-cursos">Ver cursos</button>
         </div>
 
         <div class="slider-arrows-container">
@@ -94,11 +94,63 @@
         </div>
         <div class="course-container">
           <h2 class="title-course" id="slider-text">Introducción a la botánica</h2>
-        <p class="description-course" id="description">Aprende los fundamentos de la botánica en este curso introductorio. Exploraremos la anatomía de las plantas, su clasificación y su importancia en el ecosistema urbano.</p>
+          <p class="description-course" id="description">Aprende los fundamentos de la botánica en este curso introductorio. Exploraremos la anatomía de las plantas, su clasificación y su importancia en el ecosistema urbano.</p>
+          <button class="third-button apuntate-button">¡Apúntate!</button>
+        </div>
+        
+        <div class="subtitle-container">
+          <h1 class="subtitle" id="tienda">Tienda</h1>
+          <div class="description-container">
+            <p class="formation-description">Vendemos las plantas de interior y exterior que los vecinos han cuidado con tanto cariño. </p>
+
+            <p class="formation-description">
+              También incluimos productos de pequeños comercios de la zona. El 80% de las ganancias se invierte en la plantación de árboles en nuestra ciudad.
+            </p>
+          </div>
+          <div class="shop-button-container">
+            <button class="third-button small-button">Interior</button>
+            <button class="third-button small-button">Exterior</button>
+          </div>
+          
+        </div>
+
+        <div class="slider-arrows-container-2">
+          <button id="prev" class="prev"><img src="./assets/images/arrow-prev.svg" alt="" /></button>
+          <div class="slider-2">
+            <img id="slider-plants" class="img-2" src="./assets/images/planta1.png" alt="" />
+          </div>
+          <button id="next" class="next"><img src="./assets/images/arrow-next.svg" alt="" /></button>
+        </div>
+        <div class="course-container">
+          <h2 class="title-course" id="slider-text">Dypsis Lutescens</h2>
+          <p class="description-course" id="description">8€</p>
+          <button class="third-button compra-button"><span>Añadir al carrito</span> <img src="./assets/images/carrito.svg" alt=""></button>
         </div>
         
       </section>
     </main>
+    <footer class="footer">
+        
+      <div class="footer-container">
+          <img class="footer-logo" src="./assets/images/logo.svg" alt="logo">
+          
+          <div class="text-icon-container">
+              <div class="text-container">
+                  <a class="footer-text" href="#">About</a>
+                  <a class="footer-text" href="#">Services</a>
+                  <a class="footer-text" href="#">Projects</a>
+              </div>
+              <div class=footer-icons>
+                  <a class="icon-button"><img class="icon" src="./assets/images/icon-facebook.svg" alt="facebook icon"></a>
+                  <a class="icon-button"><img class="icon" src="./assets/images/icon-instagram.svg" alt="instagram-icon"></a>
+                  <a class="icon-button"><img class="icon" src="./assets/images/icon-twitter.svg" alt="twitter-icon"></a>
+                  <a class="icon-button"><img class="icon" src="./assets/images/icon-pinterest.svg" alt="pinterest-icon"></a>
+              </div>
+          </div>
+          
+
+      </div>
+  </footer>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
