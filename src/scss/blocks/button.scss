@@ -41,7 +41,7 @@
     font-size: 23px;
     font-weight: 400;
     @include hover {
-        background-color: #b8bb29;
+        background-color: #E7EA5A;
         color: black;
     }
 }
@@ -76,4 +76,12 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+    margin-bottom:98px;
+    @include hover {
+        .carrito {
+            filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+            
+        }
+    }
 }
+

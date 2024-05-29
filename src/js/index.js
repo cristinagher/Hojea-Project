@@ -62,7 +62,6 @@ const changeSlideText = () => {
 const prevSlide = () => {
   if (slideCounter <= 0) {
     slideCounter = images.length - 1;
-    slideCounter = moreImages.length - 1
   } else {
     slideCounter--;
   }

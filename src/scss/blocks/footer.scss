@@ -1,76 +1,69 @@
 /* Estilo general para el footer */
 .footer {
-    background-color: black; /* Color de fondo del footer */
-    padding: 20px;
-    text-align: center;
+  background-color: black;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container {
+  width: 375px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 24px;
+}
+
+.footer-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #eeeee1;
+}
+.text-container {
+  display: flex;
+  gap: 57px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.text-icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 1440px;
+    
   }
-  
-  /* Contenedor principal del footer */
   .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 1440px;
   }
-  
-  /* Logo del footer */
-  .footer-logo {
-    width: 80px;
-    margin-bottom: 20px;
+}
+
+@media (hover: hover) {
+  .icon-button:hover {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(52%) saturate(1907%) hue-rotate(350deg) brightness(107%) contrast(83%);
   }
-  
-  /* Contenedor de texto e iconos */
-  .text-icon-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .footer-text:hover{
+    color: #E7EA5A;
   }
-  
-  /* Contenedor de enlaces de texto */
-  .text-container {
-    margin-bottom: 20px;
-  }
-  
-  /* Estilo de los enlaces de texto */
-  .footer-text {
+  .yellow-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
     color: white;
-    text-decoration: none;
-    margin: 10px 0;
-    font-size: 14px;
   }
-  
-  /* Contenedor de iconos */
-  .footer-icons {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Estilo de los botones de icono */
-  .icon-button {
-    margin: 0 10px;
-  }
-  
-  /* Estilo de los iconos */
-  .icon {
-    width: 24px;
-  }
-  
-  /* Media query para dispositivos móviles */
-  @media (max-width: 375px) {
-    .footer {
-      padding: 10px;
-    }
-  
-    .footer-logo {
-      width: 60px;
-    }
-  
-    .footer-text {
-      font-size: 12px;
-      margin: 8px 0;
-    }
-  
-    .icon {
-      width: 20px;
-    }
-  }
-  
+}
