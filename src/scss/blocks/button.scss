@@ -10,6 +10,7 @@
     width: 128px;
     height: 58px;
     border-radius: 24px;
+    z-index: 1;
 
     @include hover {
     border: solid 3px #b8bb29}
@@ -27,6 +28,7 @@
      @include hover {
     background-color: #b8bb29;
     }
+    z-index:1;
 }
 
 .third-button {

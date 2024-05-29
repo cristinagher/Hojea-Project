@@ -1,7 +1,6 @@
 .title-button-container {
-  // position: absolute;
-  top: 233.5px;
-  left: 26px;
+  margin-top: 233.5px;
+  margin-bottom:270px;
   display: flex;
   flex-direction: column;
   gap: 96px;
@@ -19,6 +18,7 @@
   font-size: 96px;
   font-weight: 700;
   margin: 0;
+  z-index: 1;
 }
 .description {
   font-family: 'Ubuntu';
@@ -28,6 +28,7 @@
   width: 323px;
   margin: 0;
   text-align: center;
+  z-index: 1;
 }
 
 .button-container {
@@ -36,4 +37,8 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
+}
+.main {
+  background-color: #eeeee1;
+  height: 5000px;
 }
