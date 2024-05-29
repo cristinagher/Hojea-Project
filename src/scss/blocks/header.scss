@@ -1,3 +1,7 @@
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as *;
+
+
 .header {
   &::after {
     content: '';
@@ -19,6 +23,15 @@
     background-repeat: no-repeat;
     z-index: 0;
   }
+  @include responsive (laptop){
+    background-color: rgba(0, 0, 0, 0.70);
+    &::before {
+        visibility: hidden;
+    }
+    &::after {
+        visibility: hidden;
+       }
+  }
 }
 
 .logo-image {
@@ -28,6 +41,9 @@
 .menu-hamb {
   margin-right: 15px;
   position: sticky;
+  @include responsive (laptop){
+  visibility: hidden;
+  }
 }
 .header-container {
   display: flex;
@@ -40,6 +56,30 @@
   width: 375px;
   transition: background-color 0.2s ease-in-out;
   z-index: 1;
+  @include responsive (laptop){
+    background-color: rgba(0, 0, 0, 0.70);
+    &::before {
+        content: "";
+        position: absolute;
+        top:0;
+        width: 1440px;
+        height: 1024px;
+        background-image: url(../../assets/images/landingpage-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top:0;
+        background-color: rgba(0, 0, 0, 0.46);
+        width: 1440px;
+        height: 1024px;
+        z-index: -1;
+       }
+  }
+  
 }
 
 .header-container.sticky {
