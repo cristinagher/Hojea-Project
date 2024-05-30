@@ -85,4 +85,7 @@
 .header-container.sticky {
   background: rgba(0, 0, 0, 0.819);
   z-index: 100;
+  @include responsive (laptop){
+    z-index: -1;
+  }
 }
