@@ -1,22 +1,27 @@
+@use '../mixins/responsive.scss' as *;
+
 .slider-arrows-container {
   display: flex;
   gap: 43px;
   justify-content: center;
   align-items: center;
+  @include responsive(desktop){
+  justify-content: center;
+  
+  }
 }
 .slider {
   width: 227px;
   height: 351px;
   overflow: hidden;
-  &::after {
-    content: '';
-    width: 227px;
-    height: 351px;
-    background-color: rgba(0, 0, 0, 0.432);
-    z-index: 1;
-  }
   margin-bottom:64px;
   margin-top:64px;
+  @include responsive(desktop){
+    justify-content: left;
+    width: 1000px;
+    height: 351px;
+    
+    }
 }
 
 .img {
@@ -33,6 +38,13 @@
   margin:0;
   width:343px;
   text-align: center;
+  @include responsive (desktop){
+    text-align: left;
+    font-size: 54px;
+    width: 1000px;
+    margin-left: 64px;
+
+  }
 }
 .description-course{
   color: black;
@@ -41,13 +53,26 @@
   margin:0;
   width:343px;
   text-align: center;
+  @include responsive (desktop){
+    text-align: left;
+    font-size: 28px;
+    width: 1000px;
+    margin-left: 64px;
+  }
 }
 .course-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:32px;
+  gap:64px;
+  @include responsive (desktop){
+    display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  }
+  
 }
 
 .slider-arrows-container-2{

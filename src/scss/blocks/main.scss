@@ -12,7 +12,9 @@
 .main {
   background-color: #eeeee1;
   height: auto;
-@include responsive(laptop){
+  @include responsive(laptop){
   width: 1440px;
+  margin-top: 0;
+
 }
 }
