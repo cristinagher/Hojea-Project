@@ -1,12 +1,6 @@
 @use '../mixins/responsive.scss' as *;
 
-.title-button-container {
-  margin-top: 233.5px;
-  margin-bottom:270px;
-  display: flex;
-  flex-direction: column;
-  gap: 96px;
-}
+
 .title-container {
   display: flex;
   flex-direction: column;
@@ -14,44 +8,7 @@
   align-items: center;
   gap: 32px;
 }
-.title {
-  font-family: 'Ubuntu';
-  color: white;
-  font-size: 96px;
-  font-weight: 700;
-  margin: 0;
-  z-index: 1;
-  @include responsive(laptop){
-    font-size: 150px;
-    margin-bottom:62px;
-  }
-}
-.description {
-  font-family: 'Ubuntu';
-  color: white;
-  font-size: 23px;
-  font-weight: 400;
-  width: 323px;
-  margin: 0;
-  text-align: center;
-  z-index: 1;
-  @include responsive(laptop){
-    width: 533px;
-    font-size: 32px;
-    margin-bottom:90px;
-  }
-}
 
-.button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  @include responsive(laptop){
-    flex-direction: row;
-  }
-}
 .main {
   background-color: #eeeee1;
   height: auto;
