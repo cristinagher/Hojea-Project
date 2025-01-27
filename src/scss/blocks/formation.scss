@@ -65,3 +65,11 @@
 .span {
   color: #eeeee1;
 }
+
+.course-container-plants{
+display: flex;
+flex-direction:column;
+justify-content: flex-start;
+align-items: flex-start;
+gap:64px;
+}
